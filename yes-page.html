@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yay! You said Yes!</h1>
+        <video id="valentine-video" width="425" controls autoplay>
+            <source src="videos/buksan.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script>
+        document.getElementById('valentine-video').addEventListener('ended', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

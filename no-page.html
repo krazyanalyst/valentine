@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oh no! You said No! 
+            <input type="image" src="images/sad.gif" alt="sad image" width="150" height="150">
+        </h1>
+        <input type="image" src="images/blee.jpg" alt="tongue out" width="400" height="600">
+        <audio id="blee-audio" autoplay> <source src="audio/disappointed.mp3" type="audio/mpeg">
+    </div>
+    <script>
+        document.getElementById('blee-audio').addEventListener('ended', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
